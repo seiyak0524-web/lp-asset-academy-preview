@@ -155,11 +155,11 @@ a{text-decoration:none;color:inherit;}
 /* ============================================================
    特典モックアップ（冊子・ビデオ・オーディオの3形式）
 ============================================================ */
-.bk-item,.pr-item{display:flex;flex-direction:column;align-items:center;gap:8px;}
+.bk-item,.pr-item{display:flex;flex-direction:column;align-items:center;}
 .mock-cell{
   display:flex;align-items:center;justify-content:center;width:100%;
 }
-.mk-img{width:100%;max-width:190px;height:auto;display:block;}
+.mk-img{width:100%;max-width:200px;height:auto;display:block;}
 .video-mock2{margin:0 auto 18px;width:min(94%,460px);}
 .video-mock2 img{width:100%;}
 /* ---- 提供形式チップ ---- */
@@ -379,7 +379,7 @@ a{text-decoration:none;color:inherit;}
 }
 .pr-num .pr-p{font-family:var(--script);font-size:15px;color:#7E5A12;line-height:1;margin-top:-4px;}
 .pr-num .pr-n{font-family:var(--serif);font-weight:900;font-size:24px;color:#6B4A0C;line-height:1;}
-.pr-item .mock-cell{margin-top:30px;}
+.pr-item .mk-img{margin-top:26px;}
 .pr-cap{font-size:11px;font-weight:700;color:var(--main);line-height:1.5;text-align:center;}
 .pr-ttl{font-size:12px;font-weight:900;color:var(--ink);line-height:1.5;text-align:center;margin-top:-5px;}
 
@@ -794,61 +794,18 @@ footer .f-copy{margin-top:14px;font-size:12px;opacity:.95;}
       <svg class="laurel r" viewBox="0 0 40 80" fill="none"><path d="M30 6C16 18 10 34 12 52c2 12 8 20 16 24" stroke="#C49A3C" stroke-width="3" stroke-linecap="round"/><g fill="#C49A3C"><ellipse cx="26" cy="12" rx="3" ry="7" transform="rotate(40 26 12)"/><ellipse cx="18" cy="24" rx="3" ry="7" transform="rotate(25 18 24)"/><ellipse cx="13" cy="38" rx="3" ry="7" transform="rotate(10 13 38)"/><ellipse cx="13" cy="52" rx="3" ry="7" transform="rotate(-8 13 52)"/><ellipse cx="18" cy="64" rx="3" ry="7" transform="rotate(-28 18 64)"/></g></svg>
     </p>
     <p class="get-bar">登録してすぐに10大特典GET</p>
-    <p class="fmt-legend">特典は「冊子」「ビデオ」「オーディオ」の3つの形式でお届けします
-      <span class="chips"><span class="fmt fmt-book">冊子形式</span><span class="fmt fmt-video">ビデオ形式</span><span class="fmt fmt-audio">オーディオ形式</span></span>
-    </p>
 
     <div class="bk-grid">
-      <div class="bk-item">
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk01.jpg" alt="年商1億を資産10億へ変える7ステップ" loading="lazy"></div>
-        <span class="fmt fmt-video">ビデオ形式</span>
-        <p class="bk-label">一生お金に困らない！<br><b>年商1億を資産10億へ変える<br>7ステップ</b></p>
-      </div>
-      <div class="bk-item">
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk02.jpg" alt="事業利益を資産に変える3つの方法" loading="lazy"></div>
-        <span class="fmt fmt-book">冊子形式</span>
-        <p class="bk-label">今日からできる！<br><b>事業利益を資産に変える<br>3つの方法</b></p>
-      </div>
-      <div class="bk-item">
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk03.jpg" alt="女性起業家のための最強節税術TOP10" loading="lazy"></div>
-        <span class="fmt fmt-book">冊子形式</span>
-        <p class="bk-label">知らないと大損！<br><b>女性起業家のための<br>最強節税術TOP10</b></p>
-      </div>
-      <div class="bk-item">
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk04.jpg" alt="法人設計の教科書" loading="lazy"></div>
-        <span class="fmt fmt-book">冊子形式</span>
-        <p class="bk-label">年間1000万円以上の差がつく！<br><b>法人設計の教科書</b></p>
-      </div>
-      <div class="bk-item">
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk05.jpg" alt="法人活用5ステップ" loading="lazy"></div>
-        <span class="fmt fmt-video">ビデオ形式</span>
-        <p class="bk-label">お金が残る会社になる！<br><b>法人活用5ステップ</b></p>
-      </div>
-      <div class="bk-item">
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk06.jpg" alt="資産管理会社設立完全マニュアル" loading="lazy"></div>
-        <span class="fmt fmt-book">冊子形式</span>
-        <p class="bk-label">知らないと損！<br><b>資産管理会社設立<br>完全マニュアル</b></p>
-      </div>
-      <div class="bk-item">
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk07.jpg" alt="お金が増える会社設計の秘密" loading="lazy"></div>
-        <span class="fmt fmt-audio">オーディオ形式</span>
-        <p class="bk-label">資産家だけが知っている<br><b>お金が増える会社設計の秘密</b></p>
-      </div>
-      <div class="bk-item">
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk08.jpg" alt="お金が残らない本当の理由" loading="lazy"></div>
-        <span class="fmt fmt-audio">オーディオ形式</span>
-        <p class="bk-label">利益が出ても<br><b>お金が残らない本当の理由</b></p>
-      </div>
-      <div class="bk-item">
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk09.jpg" alt="最初にやるべきお金の守り方" loading="lazy"></div>
-        <span class="fmt fmt-book">冊子形式</span>
-        <p class="bk-label">年商3000万円を超えたら<br><b>最初にやるべきお金の守り方</b></p>
-      </div>
-      <div class="bk-item">
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk10.jpg" alt="女性経営者の資産形成ロードマップ" loading="lazy"></div>
-        <span class="fmt fmt-video">ビデオ形式</span>
-        <p class="bk-label">5年後に後悔しない！<br><b>女性経営者の<br>資産形成ロードマップ</b></p>
-      </div>
+      <div class="bk-item"><img class="mk-img" src="images/mk/mk01.jpg" alt="年商1億を資産10億へ変える7ステップ" loading="lazy"></div>
+      <div class="bk-item"><img class="mk-img" src="images/mk/mk02.jpg" alt="事業利益を資産に変える3つの方法" loading="lazy"></div>
+      <div class="bk-item"><img class="mk-img" src="images/mk/mk03.jpg" alt="女性起業家のための最強節税術TOP10" loading="lazy"></div>
+      <div class="bk-item"><img class="mk-img" src="images/mk/mk04.jpg" alt="法人設計の教科書" loading="lazy"></div>
+      <div class="bk-item"><img class="mk-img" src="images/mk/mk05.jpg" alt="法人活用5ステップ" loading="lazy"></div>
+      <div class="bk-item"><img class="mk-img" src="images/mk/mk06.jpg" alt="資産管理会社設立完全マニュアル" loading="lazy"></div>
+      <div class="bk-item"><img class="mk-img" src="images/mk/mk07.jpg" alt="お金が増える会社設計の秘密" loading="lazy"></div>
+      <div class="bk-item"><img class="mk-img" src="images/mk/mk08.jpg" alt="利益が出てもお金が残らない本当の理由" loading="lazy"></div>
+      <div class="bk-item"><img class="mk-img" src="images/mk/mk09.jpg" alt="最初にやるべきお金の守り方" loading="lazy"></div>
+      <div class="bk-item"><img class="mk-img" src="images/mk/mk10.jpg" alt="女性経営者の資産形成ロードマップ" loading="lazy"></div>
     </div>
 
     <!-- さらに20大特典 -->
@@ -860,104 +817,64 @@ footer .f-copy{margin-top:14px;font-size:12px;opacity:.95;}
 
     <div class="present-grid">
       <div class="pr-item"><span class="pr-num"><span class="pr-p">Present</span><span class="pr-n">01</span></span>
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk11.jpg" alt="不動産投資はじめの一歩ガイド" loading="lazy"></div>
-        <span class="fmt fmt-book">冊子形式</span>
-        <p class="pr-cap">月50万円の不労所得が手に入る！</p><p class="pr-ttl">不動産投資はじめの一歩ガイド</p>
+        <img class="mk-img" src="images/mk/mk11.jpg" alt="不動産投資はじめの一歩ガイド" loading="lazy">
       </div>
       <div class="pr-item"><span class="pr-num"><span class="pr-p">Present</span><span class="pr-n">02</span></span>
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk12.jpg" alt="買っていい収益物件7つの見分け方" loading="lazy"></div>
-        <span class="fmt fmt-video">ビデオ形式</span>
-        <p class="pr-cap">初めてでも失敗しない！</p><p class="pr-ttl">買っていい収益物件7つの見分け方</p>
+        <img class="mk-img" src="images/mk/mk12.jpg" alt="買っていい収益物件7つの見分け方" loading="lazy">
       </div>
       <div class="pr-item"><span class="pr-num"><span class="pr-p">Present</span><span class="pr-n">03</span></span>
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk13.jpg" alt="後悔する物件ワースト10" loading="lazy"></div>
-        <span class="fmt fmt-book">冊子形式</span>
-        <p class="pr-cap">これを買うと地獄！</p><p class="pr-ttl">後悔する物件ワースト10</p>
+        <img class="mk-img" src="images/mk/mk13.jpg" alt="後悔する物件ワースト10" loading="lazy">
       </div>
       <div class="pr-item"><span class="pr-num"><span class="pr-p">Present</span><span class="pr-n">04</span></span>
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk14.jpg" alt="物件選びチェックリスト50" loading="lazy"></div>
-        <span class="fmt fmt-book">冊子形式</span>
-        <p class="pr-cap">失敗確率がガクッと下がる！</p><p class="pr-ttl">物件選びチェックリスト50</p>
+        <img class="mk-img" src="images/mk/mk14.jpg" alt="物件選びチェックリスト50" loading="lazy">
       </div>
       <div class="pr-item"><span class="pr-num"><span class="pr-p">Present</span><span class="pr-n">05</span></span>
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk15.jpg" alt="お宝物件の見抜き方5選" loading="lazy"></div>
-        <span class="fmt fmt-video">ビデオ形式</span>
-        <p class="pr-cap">プロだけが見ている！</p><p class="pr-ttl">お宝物件の見抜き方5選</p>
+        <img class="mk-img" src="images/mk/mk15.jpg" alt="お宝物件の見抜き方5選" loading="lazy">
       </div>
       <div class="pr-item"><span class="pr-num"><span class="pr-p">Present</span><span class="pr-n">06</span></span>
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk16.jpg" alt="資産1億円を作る完全ロードマップ" loading="lazy"></div>
-        <span class="fmt fmt-book">冊子形式</span>
-        <p class="pr-cap">自己資金1000万円から</p><p class="pr-ttl">資産1億円を作る完全ロードマップ</p>
+        <img class="mk-img" src="images/mk/mk16.jpg" alt="資産1億円を作る完全ロードマップ" loading="lazy">
       </div>
       <div class="pr-item"><span class="pr-num"><span class="pr-p">Present</span><span class="pr-n">07</span></span>
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk17.jpg" alt="法人と個人どっちで買うべきか答え合わせ" loading="lazy"></div>
-        <span class="fmt fmt-audio">オーディオ形式</span>
-        <p class="pr-cap">1000万円以上の差がつく！</p><p class="pr-ttl">法人と個人どっちで買うべきか答え合わせ</p>
+        <img class="mk-img" src="images/mk/mk17.jpg" alt="法人と個人どっちで買うべきか答え合わせ" loading="lazy">
       </div>
       <div class="pr-item"><span class="pr-num"><span class="pr-p">Present</span><span class="pr-n">08</span></span>
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk18.jpg" alt="収益物件の選び方" loading="lazy"></div>
-        <span class="fmt fmt-video">ビデオ形式</span>
-        <p class="pr-cap">月100万円のキャッシュが入る！</p><p class="pr-ttl">収益物件の選び方</p>
+        <img class="mk-img" src="images/mk/mk18.jpg" alt="収益物件の選び方" loading="lazy">
       </div>
       <div class="pr-item"><span class="pr-num"><span class="pr-p">Present</span><span class="pr-n">09</span></span>
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk19.jpg" alt="決算書の作り方" loading="lazy"></div>
-        <span class="fmt fmt-book">冊子形式</span>
-        <p class="pr-cap">銀行が思わず貸したくなる</p><p class="pr-ttl">決算書の作り方</p>
+        <img class="mk-img" src="images/mk/mk19.jpg" alt="決算書の作り方" loading="lazy">
       </div>
       <div class="pr-item"><span class="pr-num"><span class="pr-p">Present</span><span class="pr-n">10</span></span>
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk20.jpg" alt="融資戦略マップ" loading="lazy"></div>
-        <span class="fmt fmt-book">冊子形式</span>
-        <p class="pr-cap">10年後の資産額がガラッと変わる</p><p class="pr-ttl">融資戦略マップ</p>
+        <img class="mk-img" src="images/mk/mk20.jpg" alt="融資戦略マップ" loading="lazy">
       </div>
       <div class="pr-item"><span class="pr-num"><span class="pr-p">Present</span><span class="pr-n">11</span></span>
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk21.jpg" alt="銀行とのつき合い方" loading="lazy"></div>
-        <span class="fmt fmt-audio">オーディオ形式</span>
-        <p class="pr-cap">融資が驚くほど通りやすくなる！</p><p class="pr-ttl">銀行とのつき合い方</p>
+        <img class="mk-img" src="images/mk/mk21.jpg" alt="銀行とのつき合い方" loading="lazy">
       </div>
       <div class="pr-item"><span class="pr-num"><span class="pr-p">Present</span><span class="pr-n">12</span></span>
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk22.jpg" alt="女性起業家のための不動産融資の裏側" loading="lazy"></div>
-        <span class="fmt fmt-audio">オーディオ形式</span>
-        <p class="pr-cap">誰も教えてくれない！</p><p class="pr-ttl">女性起業家のための不動産融資の裏側</p>
+        <img class="mk-img" src="images/mk/mk22.jpg" alt="女性起業家のための不動産融資の裏側" loading="lazy">
       </div>
       <div class="pr-item"><span class="pr-num"><span class="pr-p">Present</span><span class="pr-n">13</span></span>
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk23.jpg" alt="キャッシュフロー経営の始め方" loading="lazy"></div>
-        <span class="fmt fmt-video">ビデオ形式</span>
-        <p class="pr-cap">働かなくてもお金が増える！</p><p class="pr-ttl">キャッシュフロー経営の始め方</p>
+        <img class="mk-img" src="images/mk/mk23.jpg" alt="キャッシュフロー経営の始め方" loading="lazy">
       </div>
       <div class="pr-item"><span class="pr-num"><span class="pr-p">Present</span><span class="pr-n">14</span></span>
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk24.jpg" alt="資産が拡大する5ステップ" loading="lazy"></div>
-        <span class="fmt fmt-book">冊子形式</span>
-        <p class="pr-cap">お金が増える人だけがやっている！</p><p class="pr-ttl">資産が拡大する5ステップ</p>
+        <img class="mk-img" src="images/mk/mk24.jpg" alt="資産が拡大する5ステップ" loading="lazy">
       </div>
       <div class="pr-item"><span class="pr-num"><span class="pr-p">Present</span><span class="pr-n">15</span></span>
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk25.jpg" alt="一生お金に困らない資産家思考7つの習慣" loading="lazy"></div>
-        <span class="fmt fmt-audio">オーディオ形式</span>
-        <p class="pr-cap">売上依存から卒業！</p><p class="pr-ttl">一生お金に困らない資産家思考7つの習慣</p>
+        <img class="mk-img" src="images/mk/mk25.jpg" alt="一生お金に困らない資産家思考7つの習慣" loading="lazy">
       </div>
       <div class="pr-item"><span class="pr-num"><span class="pr-p">Present</span><span class="pr-n">16</span></span>
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk26.jpg" alt="お金が増え続ける使い方7ルール" loading="lazy"></div>
-        <span class="fmt fmt-book">冊子形式</span>
-        <p class="pr-cap">資産10億超を作った！</p><p class="pr-ttl">お金が増え続ける使い方7ルール</p>
+        <img class="mk-img" src="images/mk/mk26.jpg" alt="お金が増え続ける使い方7ルール" loading="lazy">
       </div>
       <div class="pr-item"><span class="pr-num"><span class="pr-p">Present</span><span class="pr-n">17</span></span>
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk27.jpg" alt="女性起業家のお金の守り方" loading="lazy"></div>
-        <span class="fmt fmt-video">ビデオ形式</span>
-        <p class="pr-cap">不況がきても揺るがない！</p><p class="pr-ttl">女性起業家のお金の守り方</p>
+        <img class="mk-img" src="images/mk/mk27.jpg" alt="女性起業家のお金の守り方" loading="lazy">
       </div>
       <div class="pr-item"><span class="pr-num"><span class="pr-p">Present</span><span class="pr-n">18</span></span>
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk28.jpg" alt="迷わず進める資産形成マップ" loading="lazy"></div>
-        <span class="fmt fmt-book">冊子形式</span>
-        <p class="pr-cap">年商1億から資産10億へ！</p><p class="pr-ttl">迷わず進める資産形成マップ</p>
+        <img class="mk-img" src="images/mk/mk28.jpg" alt="迷わず進める資産形成マップ" loading="lazy">
       </div>
       <div class="pr-item"><span class="pr-num"><span class="pr-p">Present</span><span class="pr-n">19</span></span>
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk29.jpg" alt="収益物件ポートフォリオの作り方" loading="lazy"></div>
-        <span class="fmt fmt-video">ビデオ形式</span>
-        <p class="pr-cap">ほったらかしで利益が増え続ける！</p><p class="pr-ttl">収益物件ポートフォリオの作り方</p>
+        <img class="mk-img" src="images/mk/mk29.jpg" alt="収益物件ポートフォリオの作り方" loading="lazy">
       </div>
       <div class="pr-item"><span class="pr-num"><span class="pr-p">Present</span><span class="pr-n">20</span></span>
-        <div class="mock-cell"><img class="mk-img" src="images/mk/mk30.jpg" alt="働かなくてもお金が増える仕組みの作り方" loading="lazy"></div>
-        <span class="fmt fmt-book">冊子形式</span>
-        <p class="pr-cap">売上を追う人生から卒業！</p><p class="pr-ttl">働かなくてもお金が増える仕組みの作り方</p>
+        <img class="mk-img" src="images/mk/mk30.jpg" alt="働かなくてもお金が増える仕組みの作り方" loading="lazy">
       </div>
     </div>
 
