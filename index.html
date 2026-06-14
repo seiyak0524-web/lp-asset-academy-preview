@@ -603,7 +603,8 @@ a{text-decoration:none;color:inherit;}
 /* ============================================================
    7. 監修者セクション
 ============================================================ */
-.kanshu{background:#fff;padding:48px 0 0;text-align:center;overflow:hidden;}
+.kanshu{background:#fff;padding:0;text-align:center;overflow:hidden;}
+.profile-img{width:100%;height:auto;display:block;}
 .kanshu-top{display:flex;align-items:center;justify-content:center;gap:4%;width:min(92%,620px);margin:0 auto;}
 .kanshu-top .kt-circle{
   flex:0 0 42%;aspect-ratio:1/1;border-radius:50%;overflow:hidden;
@@ -828,56 +829,7 @@ footer .f-copy{margin-top:14px;font-size:12px;opacity:.95;}
 
   <!-- ============ 7. 監修者セクション ============ -->
   <section class="kanshu">
-    <div class="kanshu-top">
-      <div class="kt-circle"><img src="images/rie_circle.jpg" alt="松田リエ"></div>
-      <p class="kt-copy"><small>年商1億を、</small><br>資産10億へ。</p>
-    </div>
-    <span class="kn-black">3児のママ経営者が実践する</span>
-    <p class="kn-gold">
-      <svg class="laurel" viewBox="0 0 40 80" fill="none"><path d="M30 6C16 18 10 34 12 52c2 12 8 20 16 24" stroke="#C49A3C" stroke-width="3" stroke-linecap="round"/><g fill="#C49A3C"><ellipse cx="26" cy="12" rx="3" ry="7" transform="rotate(40 26 12)"/><ellipse cx="18" cy="24" rx="3" ry="7" transform="rotate(25 18 24)"/><ellipse cx="13" cy="38" rx="3" ry="7" transform="rotate(10 13 38)"/><ellipse cx="13" cy="52" rx="3" ry="7" transform="rotate(-8 13 52)"/><ellipse cx="18" cy="64" rx="3" ry="7" transform="rotate(-28 18 64)"/></g></svg>
-      <span class="gold-txt">女性起業家の<br>資産形成術</span>
-      <svg class="laurel r" viewBox="0 0 40 80" fill="none"><path d="M30 6C16 18 10 34 12 52c2 12 8 20 16 24" stroke="#C49A3C" stroke-width="3" stroke-linecap="round"/><g fill="#C49A3C"><ellipse cx="26" cy="12" rx="3" ry="7" transform="rotate(40 26 12)"/><ellipse cx="18" cy="24" rx="3" ry="7" transform="rotate(25 18 24)"/><ellipse cx="13" cy="38" rx="3" ry="7" transform="rotate(10 13 38)"/><ellipse cx="13" cy="52" rx="3" ry="7" transform="rotate(-8 13 52)"/><ellipse cx="18" cy="64" rx="3" ry="7" transform="rotate(-28 18 64)"/></g></svg>
-    </p>
-    <p class="kn-slash">事業と資産形成の両立を実現した</p>
-    <div class="kanshu-ribbon"><p><small>WOMAN ENTREPRENEUR</small>女性起業家<br>松田リエ監修</p></div>
-    <div class="kanshu-body">
-      <div class="kanshu-card">
-        <p><b>年商10億、資産10億超、40室以上の不動産を保有</b>し、<b>M&amp;Aも経験した3児のママ経営者・松田リエ</b>が監修。</p>
-        <p>事業で利益を生み出すだけでなく、その利益を不動産や資産へ変え、<b>自分が働かなくてもお金が増えていく仕組み</b>を構築。</p>
-        <p>売上を追い続ける経営者ではなく、<b>資産が増え続ける経営者</b>になるための考え方や具体的な方法を体系化しました。</p>
-        <p class="center">「何を買うか」ではなく、<br><span class="red">「どう資産を作るか」。</span></p>
-        <p>事業利益を資産へ変え、<b>年商1億を資産10億へ育てていくための資産形成無料講座</b>です。</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ 8. プロフィール ============ -->
-  <section class="profile">
-    <div class="prof-card">
-      <div class="prof-photo">
-        <img src="images/profile_arch.jpg" alt="松田リエ">
-        <p class="pp-name">松田リエ</p>
-      </div>
-      <p class="prof-script">Rie Matsuda</p>
-      <ul class="prof-list">
-        <li><b>年商10億、資産10億超、40室以上の不動産を保有</b></li>
-        <li><b>3児のママ経営者</b>として、事業と資産形成の両立を実践</li>
-        <li>事業利益を不動産へ変え、<b>自分が働かなくても収益が生まれる仕組み</b>を構築</li>
-        <li><b>M&amp;Aを経験</b>し、事業を作るだけでなく、お金を残す経営を実現</li>
-        <li>累計受講生<b>4,500名以上</b></li>
-        <li>YouTube登録者<b>21万人</b>、総フォロワー<b>70万人超</b></li>
-        <li>出版<b>17冊</b>、累計<b>43万部</b>突破</li>
-        <li>テレビ出演<b>16回以上</b></li>
-      </ul>
-    </div>
-    <div class="badge-grid">
-      <div class="badge"><span class="bg-top">受講実績</span><span class="bg-num">4,500<small>名</small></span><span class="bg-btm">以上</span><svg viewBox="0 0 100 22" fill="none"><path d="M8 4c10 10 26 14 42 14s32-4 42-14" stroke="#C49A3C" stroke-width="2.5" stroke-linecap="round"/><g fill="#C49A3C"><ellipse cx="14" cy="9" rx="2.4" ry="5" transform="rotate(55 14 9)"/><ellipse cx="32" cy="14" rx="2.4" ry="5" transform="rotate(72 32 14)"/><ellipse cx="50" cy="16" rx="2.4" ry="5" transform="rotate(90 50 16)"/><ellipse cx="68" cy="14" rx="2.4" ry="5" transform="rotate(108 68 14)"/><ellipse cx="86" cy="9" rx="2.4" ry="5" transform="rotate(125 86 9)"/></g></svg></div>
-      <div class="badge"><span class="bg-top">YouTube</span><span class="bg-num">21<small>万人</small></span><span class="bg-btm">以上</span><svg viewBox="0 0 100 22" fill="none"><path d="M8 4c10 10 26 14 42 14s32-4 42-14" stroke="#C49A3C" stroke-width="2.5" stroke-linecap="round"/><g fill="#C49A3C"><ellipse cx="14" cy="9" rx="2.4" ry="5" transform="rotate(55 14 9)"/><ellipse cx="32" cy="14" rx="2.4" ry="5" transform="rotate(72 32 14)"/><ellipse cx="50" cy="16" rx="2.4" ry="5" transform="rotate(90 50 16)"/><ellipse cx="68" cy="14" rx="2.4" ry="5" transform="rotate(108 68 14)"/><ellipse cx="86" cy="9" rx="2.4" ry="5" transform="rotate(125 86 9)"/></g></svg></div>
-      <div class="badge"><span class="bg-top">総フォロワー数</span><span class="bg-num">70<small>万人</small></span><span class="bg-btm">突破</span><svg viewBox="0 0 100 22" fill="none"><path d="M8 4c10 10 26 14 42 14s32-4 42-14" stroke="#C49A3C" stroke-width="2.5" stroke-linecap="round"/><g fill="#C49A3C"><ellipse cx="14" cy="9" rx="2.4" ry="5" transform="rotate(55 14 9)"/><ellipse cx="32" cy="14" rx="2.4" ry="5" transform="rotate(72 32 14)"/><ellipse cx="50" cy="16" rx="2.4" ry="5" transform="rotate(90 50 16)"/><ellipse cx="68" cy="14" rx="2.4" ry="5" transform="rotate(108 68 14)"/><ellipse cx="86" cy="9" rx="2.4" ry="5" transform="rotate(125 86 9)"/></g></svg></div>
-      <div class="badge"><span class="bg-top">書籍出版</span><span class="bg-num">17<small>冊</small></span><span class="bg-btm">＆累計43万部</span><svg viewBox="0 0 100 22" fill="none"><path d="M8 4c10 10 26 14 42 14s32-4 42-14" stroke="#C49A3C" stroke-width="2.5" stroke-linecap="round"/><g fill="#C49A3C"><ellipse cx="14" cy="9" rx="2.4" ry="5" transform="rotate(55 14 9)"/><ellipse cx="32" cy="14" rx="2.4" ry="5" transform="rotate(72 32 14)"/><ellipse cx="50" cy="16" rx="2.4" ry="5" transform="rotate(90 50 16)"/><ellipse cx="68" cy="14" rx="2.4" ry="5" transform="rotate(108 68 14)"/><ellipse cx="86" cy="9" rx="2.4" ry="5" transform="rotate(125 86 9)"/></g></svg></div>
-      <div class="badge"><span class="bg-top">TV出演</span><span class="bg-num">16<small>回</small></span><span class="bg-btm">以上</span><svg viewBox="0 0 100 22" fill="none"><path d="M8 4c10 10 26 14 42 14s32-4 42-14" stroke="#C49A3C" stroke-width="2.5" stroke-linecap="round"/><g fill="#C49A3C"><ellipse cx="14" cy="9" rx="2.4" ry="5" transform="rotate(55 14 9)"/><ellipse cx="32" cy="14" rx="2.4" ry="5" transform="rotate(72 32 14)"/><ellipse cx="50" cy="16" rx="2.4" ry="5" transform="rotate(90 50 16)"/><ellipse cx="68" cy="14" rx="2.4" ry="5" transform="rotate(108 68 14)"/><ellipse cx="86" cy="9" rx="2.4" ry="5" transform="rotate(125 86 9)"/></g></svg></div>
-      <div class="badge"><span class="bg-top">不動産保有</span><span class="bg-num">40<small>室</small></span><span class="bg-btm">以上</span><svg viewBox="0 0 100 22" fill="none"><path d="M8 4c10 10 26 14 42 14s32-4 42-14" stroke="#C49A3C" stroke-width="2.5" stroke-linecap="round"/><g fill="#C49A3C"><ellipse cx="14" cy="9" rx="2.4" ry="5" transform="rotate(55 14 9)"/><ellipse cx="32" cy="14" rx="2.4" ry="5" transform="rotate(72 32 14)"/><ellipse cx="50" cy="16" rx="2.4" ry="5" transform="rotate(90 50 16)"/><ellipse cx="68" cy="14" rx="2.4" ry="5" transform="rotate(108 68 14)"/><ellipse cx="86" cy="9" rx="2.4" ry="5" transform="rotate(125 86 9)"/></g></svg></div>
-    </div>
+    <img class="profile-img" src="images/profile-main.png?v=1" alt="年商1億を資産10億へ。3児のママ経営者が実践する女性起業家の資産形成術。女性起業家 松田リエ監修。年商10億・資産20億超・4年前は上司の不機嫌で涙／3児のママ起業家として女性のための資産の不安を解消／資産形成や節税・法人化、資産運用のサポートで個別コンサル生延べ多数／累計受講生4,500名以上／YouTube総再生7,000万・他メディア多数／書籍13冊・累計43万部に掲載／著書累計18冊出版。実績画像・メディア掲載多数。累計受講生4,500名以上／YouTube総登録者21万人以上／メディア掲載70万名突破／メルマガ読者43万名突破／メディア出演16回以上／著書累計40名突破" width="724" height="2172">
   </section>
 
   <!-- ============ 9. ビジョン ============ -->
