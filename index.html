@@ -149,10 +149,12 @@ a{text-decoration:none;color:inherit;}
 .fmt-legend .chips{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:4px;}
 .bk-grid{
   width:min(94%,640px);margin:0 auto;background:#fff;border-radius:14px;
-  padding:30px 4% 24px;display:grid;grid-template-columns:repeat(2,1fr);
-  gap:22px 16px;box-shadow:0 6px 18px rgba(180,80,110,.18);
+  padding:24px 3.5% 20px;box-shadow:0 6px 18px rgba(180,80,110,.18);
 }
-.bk-grid .mk-img{max-width:100%;}
+.bk-row{display:flex;justify-content:center;gap:10px;margin-bottom:14px;}
+.bk-row:last-child{margin-bottom:0;}
+.bk-row .bk-item{flex:1;min-width:0;}
+.bk-grid .mk-img{max-width:100%;width:100%;}
 .tokuten-foot{
   width:min(94%,640px);margin:18px auto 0;text-align:center;
   font-family:var(--serif);font-weight:700;color:var(--wine);
@@ -815,16 +817,22 @@ footer .f-copy{margin-top:14px;font-size:12px;opacity:.95;}
     <p class="get-bar">登録してすぐに10大特典GET</p>
 
     <div class="bk-grid">
-      <div class="bk-item"><img class="mk-img" src="images/line-tokuten-01.png?v=1" alt="一生お金に困らない！年商1億を資産10億へ変える7ステップ" loading="lazy"></div>
-      <div class="bk-item"><img class="mk-img" src="images/line-tokuten-02.png?v=1" alt="今日からできる！ビジネスの利益を資産に変える3つの方法" loading="lazy"></div>
-      <div class="bk-item"><img class="mk-img" src="images/line-tokuten-03.png?v=1" alt="知らないと大損！女性起業家のための最強節税術TOP10" loading="lazy"></div>
-      <div class="bk-item"><img class="mk-img" src="images/line-tokuten-04.png?v=1" alt="年間1000万円以上の差がつく！法人設計の教科書" loading="lazy"></div>
-      <div class="bk-item"><img class="mk-img" src="images/line-tokuten-05.png?v=1" alt="お金が残る会社になる！法人活用5ステップ" loading="lazy"></div>
-      <div class="bk-item"><img class="mk-img" src="images/line-tokuten-06.png?v=1" alt="知らないと損！資産管理会社設立完全マニュアル" loading="lazy"></div>
-      <div class="bk-item"><img class="mk-img" src="images/line-tokuten-07.png?v=1" alt="資産家だけが知っているお金が増える会社設計の秘密" loading="lazy"></div>
-      <div class="bk-item"><img class="mk-img" src="images/line-tokuten-08.png?v=1" alt="利益が出てもお金が残らない本当の理由" loading="lazy"></div>
-      <div class="bk-item"><img class="mk-img" src="images/line-tokuten-09.png?v=1" alt="年商3000万円を超えたら最初にやるべきお金の守り方" loading="lazy"></div>
-      <div class="bk-item"><img class="mk-img" src="images/line-tokuten-10.png?v=1" alt="5年後に後悔しない！女性経営者の資産形成ロードマップ" loading="lazy"></div>
+      <div class="bk-row">
+        <div class="bk-item"><img class="mk-img" src="images/line-tokuten-01.png?v=1" alt="一生お金に困らない！年商1億を資産10億へ変える7ステップ" loading="lazy"></div>
+        <div class="bk-item"><img class="mk-img" src="images/line-tokuten-02.png?v=1" alt="今日からできる！ビジネスの利益を資産に変える3つの方法" loading="lazy"></div>
+        <div class="bk-item"><img class="mk-img" src="images/line-tokuten-03.png?v=1" alt="知らないと大損！女性起業家のための最強節税術TOP10" loading="lazy"></div>
+      </div>
+      <div class="bk-row">
+        <div class="bk-item"><img class="mk-img" src="images/line-tokuten-04.png?v=1" alt="年間1000万円以上の差がつく！法人設計の教科書" loading="lazy"></div>
+        <div class="bk-item"><img class="mk-img" src="images/line-tokuten-05.png?v=1" alt="お金が残る会社になる！法人活用5ステップ" loading="lazy"></div>
+        <div class="bk-item"><img class="mk-img" src="images/line-tokuten-06.png?v=1" alt="知らないと損！資産管理会社設立完全マニュアル" loading="lazy"></div>
+      </div>
+      <div class="bk-row">
+        <div class="bk-item"><img class="mk-img" src="images/line-tokuten-07.png?v=1" alt="資産家だけが知っているお金が増える会社設計の秘密" loading="lazy"></div>
+        <div class="bk-item"><img class="mk-img" src="images/line-tokuten-08.png?v=1" alt="利益が出てもお金が残らない本当の理由" loading="lazy"></div>
+        <div class="bk-item"><img class="mk-img" src="images/line-tokuten-09.png?v=1" alt="年商3000万円を超えたら最初にやるべきお金の守り方" loading="lazy"></div>
+        <div class="bk-item"><img class="mk-img" src="images/line-tokuten-10.png?v=1" alt="5年後に後悔しない！女性経営者の資産形成ロードマップ" loading="lazy"></div>
+      </div>
     </div>
 
     <p class="tokuten-foot">LINE登録後すぐに、動画・PDFをお受け取りいただけます</p>
