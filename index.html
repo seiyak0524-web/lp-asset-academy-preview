@@ -50,7 +50,17 @@ a{text-decoration:none;color:inherit;}
 
 /* 緑CTAボタン */
 .cta-wrap{padding:10px 6% 14px;}
-.cta-img{width:100%;height:auto;display:block;}
+.cta-img{width:100%;height:auto;display:block;
+  animation:cta-attn 2.6s ease-in-out infinite;transform-origin:center;}
+@keyframes cta-attn{
+  0%,18%,100%{transform:scale(1) rotate(0);}
+  3%{transform:scale(1.035) rotate(-1.4deg);}
+  6%{transform:scale(1.035) rotate(1.4deg);}
+  9%{transform:scale(1.035) rotate(-1.2deg);}
+  12%{transform:scale(1.035) rotate(1deg);}
+  15%{transform:scale(1.02) rotate(0);}
+}
+@media (prefers-reduced-motion:reduce){.cta-img,.cta-img2{animation:none;}}
 .cta-btn{
   display:block;position:relative;text-align:center;
   background:linear-gradient(180deg,#62DCA4 0%,#19B57A 45%,#0B9B64 100%);
@@ -799,7 +809,8 @@ a{text-decoration:none;color:inherit;}
 .last{background:#FFFAF7;padding:0 0 40px;text-align:center;}
 .vision-img{width:100%;height:auto;display:block;}
 .last-cta-wrap{padding:20px 5% 8px;}
-.cta-img2{width:100%;height:auto;display:block;}
+.cta-img2{width:100%;height:auto;display:block;
+  animation:cta-attn 2.6s ease-in-out infinite;transform-origin:center;}
 .last .l-head{
   width:min(92%,620px);margin:0 auto;
   background:linear-gradient(105deg,#C9244F 0%,#E0577E 55%,#D33667 100%);
@@ -966,7 +977,8 @@ footer .f-copy{margin-top:14px;font-size:12px;opacity:.95;}
 
   <!-- ============ 7. 監修者セクション ============ -->
   <section class="kanshu">
-    <img class="profile-img" src="images/profile-main.png?v=5" alt="年商1億を資産10億へ。3児のママ経営者が実践する女性起業家の資産形成術。女性起業家 松田リエ監修。年商10億・資産20億超・4年前は上司の不機嫌で涙／3児のママ起業家として女性のための資産の不安を解消／資産形成や節税・法人化、資産運用のサポートで個別コンサル生延べ多数／累計受講生4,500名以上／YouTube総再生7,000万・他メディア多数／書籍13冊・累計43万部に掲載／著書累計18冊出版。実績画像・メディア掲載多数。累計受講生4,500名以上／YouTube総登録者21万人以上／メディア掲載70万名突破／メルマガ読者43万名突破／メディア出演16回以上／著書累計40名突破" width="724" height="2172">
+    <img class="profile-img" src="images/profile-top.png?v=1" alt="年商1億を資産10億へ。3児のママ経営者が実践する女性起業家の資産形成術。女性起業家 松田リエ監修。年商10億・資産20億超、40室以上の不動産を保有、M&Aも経験した3児のママ経営者・松田リエが監修。累計受講生4,500名以上／YouTube登録者22万人・総フォロワー70万人超／出版17冊・累計43万部突破／テレビ出演16回以上" width="1012" height="1554">
+    <img class="profile-img" src="images/jisseki.png?v=1" alt="実績画像・メディア掲載多数。累計受講生4,500名以上／YouTube総登録者22万人以上／総フォロワー70万人突破／累計43万部突破／メディア出演16回以上" width="724" height="1090">
   </section>
 
   <!-- ============ 9-10. ビジョン〜ラスト（画像） ============ -->
