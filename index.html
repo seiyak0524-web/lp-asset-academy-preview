@@ -104,26 +104,45 @@ a{text-decoration:none;color:inherit;}
     radial-gradient(circle at 8% 70%,rgba(255,255,255,.4) 0 4px,transparent 5px),
     radial-gradient(circle at 92% 84%,rgba(255,255,255,.4) 0 6px,transparent 7px),
     linear-gradient(180deg,#FBDFE6 0%,#FCE9EE 40%,#FBDDE5 100%);
-  padding:0 0 40px;
+  padding:32px 0 40px;
 }
+.tokuten-head + .bk-grid{margin-top:26px;}
 .tokuten-line-img{width:100%;height:auto;display:block;}
-.ribbon{
-  position:relative;width:fit-content;margin:0 auto 26px;
-  background:linear-gradient(180deg,#C9244F,#A8123C);
+/* ヘッダー全体を淡ピンクのパネルで囲む */
+.tokuten-head{
+  width:min(94%,648px);margin:0 auto;
+  background:linear-gradient(180deg,#FCEAF0 0%,#FBE1EA 100%);
+  border:1px solid rgba(201,36,79,.14);border-radius:20px;
+  padding:34px 4% 28px;box-shadow:0 8px 22px rgba(180,80,110,.12);
+}
+/* リボン帯（燕尾型バナー） */
+.ribbon{position:relative;width:fit-content;max-width:100%;margin:0 auto 22px;}
+.ribbon span{
+  position:relative;z-index:2;display:block;
+  background:linear-gradient(180deg,#EA6E88 0%,#DB4C6D 52%,#CC2F55 100%);
   color:#fff;font-family:var(--serif);font-weight:700;
-  font-size:clamp(21px,5.6vw,32px);letter-spacing:.12em;
-  padding:10px 34px;border-radius:6px;
-  box-shadow:0 4px 10px rgba(150,20,60,.3);
+  font-size:clamp(21px,5.6vw,33px);letter-spacing:.1em;
+  padding:13px 38px;border-radius:5px;
+  text-shadow:0 1px 2px rgba(140,20,55,.4);
+  box-shadow:0 5px 12px rgba(150,20,60,.22);
 }
 .ribbon::before,.ribbon::after{
-  content:"";position:absolute;top:8px;width:30px;height:78%;
-  background:linear-gradient(180deg,#A8123C,#8A0D30);z-index:-1;
+  content:"";position:absolute;top:11px;bottom:-13px;width:44px;z-index:1;
+  background:linear-gradient(180deg,#B11E45,#92143A);
+  box-shadow:0 3px 6px rgba(120,15,45,.22);
 }
-.ribbon::before{left:-20px;transform:skewY(-14deg);clip-path:polygon(0 0,100% 0,100% 100%,0 100%,38% 50%);}
-.ribbon::after{right:-20px;transform:skewY(14deg);clip-path:polygon(0 0,100% 0,62% 50%,100% 100%,0 100%);}
+.ribbon::before{left:-27px;clip-path:polygon(0 0,100% 0,100% 100%,0 100%,34% 50%);}
+.ribbon::after {right:-27px;clip-path:polygon(0 0,100% 0,66% 50%,100% 100%,0 100%);}
 .tokuten-lead{
-  text-align:center;font-family:var(--serif);font-weight:700;
-  color:var(--wine);font-size:clamp(16px,4.4vw,24px);line-height:1.7;letter-spacing:.04em;
+  font-family:var(--serif);font-weight:700;color:var(--wine);
+  font-size:clamp(15px,4.2vw,22px);line-height:1.7;letter-spacing:.04em;
+  display:flex;align-items:center;justify-content:center;gap:14px;
+}
+.tokuten-lead .lead-deco{color:#D7A53A;font-size:1.05em;flex-shrink:0;}
+.tokuten-lead .lead-txt{text-align:center;}
+.tokuten-lead .lead-txt em{
+  font-style:normal;font-weight:900;padding:0 2px;
+  background:linear-gradient(transparent 58%,#F7D45A 58%);
 }
 .tokuten-max{
   text-align:center;font-family:var(--serif);font-weight:900;
@@ -138,15 +157,17 @@ a{text-decoration:none;color:inherit;}
 .tokuten-max .laurel.r{transform:scaleX(-1) rotate(-8deg);}
 .tokuten-max em{font-style:normal;font-size:1.62em;letter-spacing:.01em;}
 .get-bar{
-  width:min(92%,560px);margin:20px auto 16px;text-align:center;
-  background:linear-gradient(105deg,#C9244F,#E0577E 55%,#C9244F);
-  border-radius:8px;
+  width:min(94%,580px);margin:24px auto 4px;text-align:center;
+  background:linear-gradient(100deg,#C42150 0%,#D84368 45%,#E97E9B 100%);
+  border:2px solid #F3E0B0;border-radius:7px;
   color:#fff;font-family:var(--serif);font-weight:700;
-  font-size:clamp(20px,5.4vw,30px);letter-spacing:.1em;
+  font-size:clamp(19px,5.1vw,29px);letter-spacing:.07em;
   padding:14px 8px;
-  box-shadow:0 5px 12px rgba(150,20,60,.28),
-             inset 0 0 0 2px #C9244F, inset 0 0 0 3px rgba(255,255,255,.85);
+  box-shadow:0 5px 12px rgba(150,20,60,.25),
+             inset 0 0 0 3px rgba(255,255,255,.5);
 }
+.get-bar span{display:block;}
+.get-bar em{font-style:normal;font-size:1.16em;}
 /* 3形式の説明バー */
 .fmt-legend{
   width:min(92%,560px);margin:0 auto 24px;text-align:center;
@@ -817,14 +838,20 @@ footer .f-copy{margin-top:14px;font-size:12px;opacity:.95;}
 
   <!-- ============ 2. 特典セクション ============ -->
   <section class="tokuten">
-    <h2 class="ribbon">勉強会 豪華参加特典</h2>
-    <p class="tokuten-lead">女性起業家の資産形成完全ロードマップ<br>勉強会専用LINEにご登録の方全員に</p>
-    <p class="tokuten-max">
-      <img class="laurel l" src="images/wheat-gold.png?v=2" alt="" aria-hidden="true">
-      <span class="gold-txt">最<small>大</small><em>30</em>大特典<br>プレゼント</span>
-      <img class="laurel r" src="images/wheat-gold.png?v=2" alt="" aria-hidden="true">
-    </p>
-    <p class="get-bar">登録してすぐに10大特典GET</p>
+    <div class="tokuten-head">
+      <h2 class="ribbon"><span>勉強会 豪華参加特典</span></h2>
+      <p class="tokuten-lead">
+        <span class="lead-deco">❖</span>
+        <span class="lead-txt">女性起業家の資産形成完全ロードマップ<br>勉強会専用LINEにご登録の方<em>全員</em>に</span>
+        <span class="lead-deco">❖</span>
+      </p>
+      <p class="tokuten-max">
+        <img class="laurel l" src="images/wheat-gold.png?v=2" alt="" aria-hidden="true">
+        <span class="gold-txt">最<small>大</small><em>30</em>大特典<br>プレゼント</span>
+        <img class="laurel r" src="images/wheat-gold.png?v=2" alt="" aria-hidden="true">
+      </p>
+      <p class="get-bar"><span>登録してすぐに<em>10</em>大特典GET</span></p>
+    </div>
 
     <div class="bk-grid">
       <div class="bk-row">
