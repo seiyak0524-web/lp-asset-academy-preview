@@ -710,53 +710,13 @@ a{text-decoration:none;color:inherit;}
 .kanshu-card{
   width:min(92%,600px);margin:0 auto;background:#fff;
   border:1px solid #E3C97E;outline:4px solid #fff;border-radius:4px;
-  text-align:left;padding:30px 7%;line-height:2.0;
-  font-size:clamp(16.5px,4.6vw,21px);font-weight:500;
+  text-align:left;padding:26px 6%;line-height:2.05;
+  font-size:clamp(14.5px,4vw,18px);font-weight:500;
   box-shadow:0 6px 16px rgba(190,110,130,.2);
 }
 .kanshu-card p+p{margin-top:1em;}
 .kanshu-card b{color:var(--main);font-weight:900;}
 .kanshu-card .center{text-align:center;font-family:var(--serif);font-weight:700;}
-
-/* プロフィール（横並び・テキスト版） */
-.kanshu-profile{
-  display:flex;align-items:flex-start;gap:3%;
-  background:linear-gradient(180deg,#FCE7EC 0%,#FBDCE4 100%);
-  padding:30px 5% 36px;text-align:left;
-}
-.kanshu-profile .kp-photo{flex:0 0 43%;align-self:stretch;display:flex;align-items:flex-end;}
-.kanshu-profile .kp-photo img{width:100%;display:block;border-radius:4px;}
-.kanshu-profile .kp-info{flex:1;padding-top:6px;}
-.kanshu-profile .kp-name{
-  font-family:var(--serif);font-weight:900;color:var(--main);
-  font-size:clamp(38px,10vw,58px);line-height:1.05;letter-spacing:.04em;margin:0;
-}
-.kanshu-profile .kp-en{
-  display:block;font-family:var(--script);
-  color:#C9244F;font-weight:600;font-size:.44em;letter-spacing:.1em;margin-top:4px;
-}
-.kanshu-profile .kp-line{
-  height:1px;background:linear-gradient(90deg,transparent,#D9A0AE 20%,#D9A0AE 80%,transparent);
-  margin:14px 0 18px;
-}
-.kanshu-profile .kp-list{list-style:none;margin:0;padding:0;}
-.kanshu-profile .kp-list li{
-  position:relative;padding-left:22px;
-  font-size:clamp(15.5px,4.2vw,20px);font-weight:600;line-height:1.62;margin-bottom:13px;
-}
-.kanshu-profile .kp-list li:last-child{margin-bottom:0;}
-.kanshu-profile .kp-list li::before{
-  content:"";position:absolute;left:2px;top:.5em;width:10px;height:10px;border-radius:50%;
-  background:#E0577E;
-}
-.kanshu-profile .kp-list li b{color:var(--main);font-weight:900;}
-@media (max-width:480px){
-  .kanshu-profile{flex-direction:column;align-items:center;gap:20px;}
-  .kanshu-profile .kp-photo{flex:0 0 auto;width:74%;}
-  .kanshu-profile .kp-info{width:100%;}
-  .kanshu-profile .kp-name{text-align:center;}
-  .kanshu-profile .kp-line{margin:14px auto 18px;}
-}
 
 /* ============================================================
    8. プロフィール
@@ -897,8 +857,8 @@ footer .f-copy{margin-top:14px;font-size:12px;opacity:.95;}
   <!-- ============ 1. ファーストビュー ============ -->
   <section class="fv">
     <img src="images/fv-v2.png" alt="年商1億を資産10億へ。ビジネスの利益を資産に変える 女性起業家の資産形成完全ロードマップ｜完全無料・オンライン勉強会を開催中！動画講座全3回(100分以上)プレゼント！豪華で30大特典プレゼント中｜3児のママ経営者 松田リエ（年商10億・資産20億超・40家以上を保有・M&Aを経験）">
-    <div class="cta-wrap" style="padding-top:18px;">
-      <a class="cta-link" href="https://line.me/R/ti/p/@623nffxx"><img class="cta-img" src="images/cta-btn-only.png?v=1" alt="資産形成ロードマップをプレゼント。今すぐ無料で受け取る" width="1942" height="577"></a>
+    <div class="cta-wrap" style="padding-top:0;margin-top:-26px;">
+      <a class="cta-link" href="https://line.me/R/ti/p/@623nffxx"><img class="cta-img" src="images/cta-btn-only.png?v=2" alt="資産形成ロードマップをプレゼント。今すぐ無料で受け取る" width="1846" height="577"></a>
     </div>
   </section>
 
@@ -952,7 +912,7 @@ footer .f-copy{margin-top:14px;font-size:12px;opacity:.95;}
     </div>
 
     <div class="cta-wrap" style="margin-top:36px;">
-      <a class="cta-link" href="https://line.me/R/ti/p/@623nffxx"><img class="cta-img" src="images/cta-btn.png?v=3" alt="お金が増え続けていく仕組みを作りませんか？資産形成ロードマップをプレゼント。今すぐ無料で受け取る" width="1942" height="809"></a>
+      <a class="cta-link" href="https://line.me/R/ti/p/@623nffxx"><img class="cta-img" src="images/cta-btn-trim.png?v=1" alt="お金が増え続けていく仕組みを作りませんか？資産形成ロードマップをプレゼント。今すぐ無料で受け取る" width="1846" height="809"></a>
     </div>
   </section>
 
@@ -979,44 +939,7 @@ footer .f-copy{margin-top:14px;font-size:12px;opacity:.95;}
 
   <!-- ============ 7. 監修者セクション ============ -->
   <section class="kanshu">
-    <div class="kanshu-top">
-      <div class="kt-circle"><img src="images/rie_circle.jpg" alt="松田リエ"></div>
-      <p class="kt-copy"><small>年商1億を、</small><br>資産10億へ。</p>
-    </div>
-    <span class="kn-black">3児のママ経営者が実践する</span>
-    <p class="kn-gold">
-      <svg class="laurel" viewBox="0 0 40 80" fill="none"><path d="M30 6C16 18 10 34 12 52c2 12 8 20 16 24" stroke="#C49A3C" stroke-width="3" stroke-linecap="round"/><g fill="#C49A3C"><ellipse cx="26" cy="12" rx="3" ry="7" transform="rotate(40 26 12)"/><ellipse cx="18" cy="24" rx="3" ry="7" transform="rotate(25 18 24)"/><ellipse cx="13" cy="38" rx="3" ry="7" transform="rotate(10 13 38)"/><ellipse cx="13" cy="52" rx="3" ry="7" transform="rotate(-8 13 52)"/><ellipse cx="18" cy="64" rx="3" ry="7" transform="rotate(-28 18 64)"/></g></svg>
-      <span class="gold-txt">女性起業家の<br>資産形成術</span>
-      <svg class="laurel r" viewBox="0 0 40 80" fill="none"><path d="M30 6C16 18 10 34 12 52c2 12 8 20 16 24" stroke="#C49A3C" stroke-width="3" stroke-linecap="round"/><g fill="#C49A3C"><ellipse cx="26" cy="12" rx="3" ry="7" transform="rotate(40 26 12)"/><ellipse cx="18" cy="24" rx="3" ry="7" transform="rotate(25 18 24)"/><ellipse cx="13" cy="38" rx="3" ry="7" transform="rotate(10 13 38)"/><ellipse cx="13" cy="52" rx="3" ry="7" transform="rotate(-8 13 52)"/><ellipse cx="18" cy="64" rx="3" ry="7" transform="rotate(-28 18 64)"/></g></svg>
-    </p>
-    <p class="kn-slash">事業と資産形成の両立を実現した</p>
-    <div class="kanshu-ribbon"><p><small>WOMAN ENTREPRENEUR</small>女性起業家<br>松田リエ監修</p></div>
-    <div class="kanshu-body">
-      <div class="kanshu-card">
-        <p><b>年商10億、資産20億超、40室以上の不動産を保有</b>し、<b>M&amp;Aも経験した3児のママ経営者・松田リエ</b>が監修。</p>
-        <p>事業で利益を生み出すだけでなく、その利益を不動産や資産へ変え、<b>自分が働かなくてもお金が増えていく仕組み</b>を構築。</p>
-        <p>売上を追い続ける経営者ではなく、<b>資産が増え続ける経営者</b>になるための考え方や具体的な方法を体系化しました。</p>
-        <p class="center">「何を買うか」ではなく、<br><span class="red">「どう資産を作るか」。</span></p>
-        <p>事業利益を資産へ変え、<b>年商1億を資産10億へ育てていくための資産形成無料講座</b>です。</p>
-      </div>
-    </div>
-    <div class="kanshu-profile">
-      <div class="kp-photo"><img src="images/rie-fig.png?v=1" alt="松田リエ"></div>
-      <div class="kp-info">
-        <p class="kp-name">松田リエ<span class="kp-en">Rie Matsuda</span></p>
-        <div class="kp-line"></div>
-        <ul class="kp-list">
-          <li><b>年商10億、資産20億超、40室以上の不動産</b>を保有</li>
-          <li><b>3児のママ経営者</b>として、事業と資産形成の両立を実践</li>
-          <li>事業利益を不動産へ変え、<b>自分が働かなくても収益が生まれる仕組み</b>を構築</li>
-          <li><b>M&amp;Aを経験</b>し、事業を作るだけでなく、お金を増やす経営を実現</li>
-          <li>累計受講生<b>4,500名以上</b></li>
-          <li>YouTube登録者<b>22万人</b>、総フォロワー<b>70万人超</b></li>
-          <li>出版<b>17冊</b>、累計<b>43万部</b>突破</li>
-          <li>テレビ出演<b>16回以上</b></li>
-        </ul>
-      </div>
-    </div>
+    <img class="profile-img" src="images/profile-top.png?v=2" alt="年商1億を資産10億へ。3児のママ経営者が実践する女性起業家の資産形成術。女性起業家 松田リエ監修。年商10億・資産20億超、40室以上の不動産を保有、M&Aも経験した3児のママ経営者・松田リエが監修。累計受講生4,500名以上／YouTube登録者22万人・総フォロワー70万人超／出版17冊・累計43万部突破／テレビ出演16回以上" width="1012" height="1554">
     <img class="profile-img" src="images/jisseki.png?v=3" alt="実績画像・メディア掲載多数。累計受講生4,500名以上／YouTube総登録者22万人以上／総フォロワー70万人突破／累計43万部突破／メディア出演16回以上" width="724" height="1164">
   </section>
 
