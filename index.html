@@ -37,9 +37,12 @@ body{background:#EDE4DC;font-family:var(--sans);color:var(--ink);line-height:1.8
 img{max-width:100%;display:block;}
 a{text-decoration:none;color:inherit;}
 #lp{max-width:750px;margin:0 auto;background:#fff;box-shadow:0 0 24px rgba(60,30,40,.25);overflow:hidden;}
-/* PC: ファーストビュー+CTAボタンが1画面に収まる幅に制限（FV+CTA高さ≒幅×1.71） */
+/* PC: 画面下に固定CTAボタンを常時表示（スマホでは非表示） */
+#pc-cta{display:none;}
 @media (min-width:768px){
-  #lp{max-width:min(750px, 57vh);}
+  #pc-cta{display:block;position:fixed;bottom:16px;left:50%;transform:translateX(-50%);
+    z-index:999;width:330px;filter:drop-shadow(0 8px 18px rgba(20,80,55,.4));}
+  #pc-cta img{width:100%;height:auto;display:block;}
 }
 
 /* ---------- 共通パーツ ---------- */
@@ -974,5 +977,6 @@ footer .f-copy{margin-top:14px;font-size:12px;opacity:.95;}
   </footer>
 
 </div>
+<a id="pc-cta" href="https://line.me/R/ti/p/@623nffxx"><img src="images/cta-btn-only.png?v=2" alt="今すぐ無料で受け取る"></a>
 </body>
 </html>
