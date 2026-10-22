@@ -62,7 +62,7 @@ img{display:block;max-width:100%}
 .yt{display:block;margin-top:14px;text-decoration:none}.ytlab{font-size:12.5px;color:var(--gold-d);font-weight:700;letter-spacing:.1em;margin-bottom:6px}.ytf{position:relative;aspect-ratio:16/9;border:1px solid var(--gold-l);background:#000;overflow:hidden}.ytf img{width:100%;height:100%;object-fit:cover;opacity:.92}.ytf .play{position:absolute;left:50%;top:50%;width:58px;height:58px;margin:-29px 0 0 -29px;border-radius:50%;background:rgba(94,14,39,.85);border:1px solid var(--gold-l)}.ytf .play:after{content:"";position:absolute;left:23px;top:18px;border-left:16px solid #fff;border-top:11px solid transparent;border-bottom:11px solid transparent}
 .card.sem{background:linear-gradient(135deg,#FFF9F0,#FDF2F4);border-color:var(--gold-l)}
 .card.sem .bd{padding-top:22px}
-.card.sem .ic{width:54px;height:54px;border-radius:50%;border:1px solid var(--gold-m);display:flex;align-items:center;justify-content:center;margin-bottom:12px;background:#fff}
+.card.sem .ic{width:54px;height:54px;border-radius:50%;border:1px solid var(--gold-m);display:flex;align-items:center;justify-content:center;margin-bottom:12px;background:#fff;position:relative}.card.sem .numin{position:absolute;right:-10px;top:-10px;width:28px;height:28px;border-radius:50%;background:var(--wine);color:var(--gold-l);font-family:var(--en);font-size:16px;display:flex;align-items:center;justify-content:center;border:1px solid var(--gold-l)}
 .card.sem .ic svg{width:26px;height:26px}
 
 /* ===== schedule ===== */
@@ -124,20 +124,20 @@ img{display:block;max-width:100%}
 <section class="sec">
   <div class="hd"><div class="en">Highlights</div><h2>ツアーの見どころ</h2><div class="orn"></div></div>
   <div class="hl">
+    <article class="card sem">
+      <div class="bd"><div class="ic"><span class="numin">1</span><svg viewBox="0 0 24 24" fill="none" stroke="#9C6A14" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a1 1 0 0 1 1-1h6l1 1h7a1 1 0 0 1 1 1v13"/><path d="M4 19h16"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><h3><small>SPECIAL SEMINAR</small>不動産のプロによる特別セミナー</h3><p>まず、不動産のプロによる特別セミナーから。物件を見るときのポイントを押さえてから、現地へ向かいます。</p></div>
+    </article>
     <article class="card">
-      <div class="ph"><img src="img/miyakojima.jpg" alt="都島の物件" style="object-position:center 18%"><div class="num">1</div><div class="cap">Miyakojima</div></div>
-      <div class="bd"><h3><small>PROPERTY</small>都島の物件を見学</h3><p>最初に、都島の物件へ。建物の外観から周辺環境まで、実物を前にして確かめます。</p>
+      <div class="ph"><img src="img/miyakojima.jpg" alt="都島の物件" style="object-position:center 18%"><div class="num">2</div><div class="cap">Miyakojima</div></div>
+      <div class="bd"><h3><small>PROPERTY</small>都島の物件を見学</h3><p>都島の物件へ。建物の外観から周辺環境まで、実物を前にして確かめます。</p>
         <a class="yt" href="https://youtu.be/wcfstcgnbjc" target="_blank" rel="noopener"><div class="ytlab">▶ 都島の物件の様子を動画で見る（YouTube）</div><div class="ytf"><img src="img/yt_miyakojima.jpg" alt="都島の物件の様子（動画）"><span class="play"></span></div></a></div>
     </article>
-    <article class="card sem">
-      <div class="bd"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#9C6A14" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a1 1 0 0 1 1-1h6l1 1h7a1 1 0 0 1 1 1v13"/><path d="M4 19h16"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><h3><small>SPECIAL SEMINAR</small>不動産のプロによる特別セミナー</h3><p>ツアーの途中で、不動産のプロによる特別セミナーを行います。物件を見た直後だからこそ、話が腑に落ちる時間です。</p></div>
-    </article>
     <article class="card">
-      <div class="ph"><img src="img/hero.jpg" alt="物件を見上げる参加者" style="object-position:center 60%"><div class="num">2</div><div class="cap">Another Property</div></div>
+      <div class="ph"><img src="img/hero.jpg" alt="物件を見上げる参加者" style="object-position:center 60%"><div class="num">3</div><div class="cap">Another Property</div></div>
       <div class="bd"><h3><small>PROPERTY</small>価格帯の異なる物件を見学</h3><p>都島の物件とは規模や価格帯の異なる物件も見学し、ご自身にとっての「現実的な一棟目」の感覚をつかみます。</p></div>
     </article>
     <article class="card">
-      <div class="ph"><img src="img/party.jpg?v=2" alt="懇親会"><div class="num">3</div><div class="cap">Dinner</div></div>
+      <div class="ph"><img src="img/party.jpg?v=2" alt="懇親会"><div class="num">4</div><div class="cap">Dinner</div></div>
       <div class="bd"><h3><small>17:00 – 19:00</small>懇親会</h3><p>見てきた物件のこと、これからのこと。同じ目標を持つ仲間と、ゆっくり語り合う時間です。（実費・別途ご案内）</p></div>
     </article>
   </div>
@@ -147,8 +147,8 @@ img{display:block;max-width:100%}
   <div class="hd"><div class="en">Schedule</div><h2>当日の流れ</h2><div class="orn"></div></div>
   <div class="sch">
     <div class="row"><div class="tm">13:00<small>集合</small></div><div><h4>大阪市内近郊に集合</h4><p>集合場所の詳細は、お申し込みの方に追ってご案内します</p></div></div>
-    <div class="row"><div class="tm jp">開始</div><div><h4>都島の物件を見学</h4></div></div>
-    <div class="row"><div class="tm jp">途中</div><div><h4>不動産のプロによる特別セミナー</h4></div></div>
+    <div class="row"><div class="tm jp">開始</div><div><h4>不動産のプロによる特別セミナー</h4></div></div>
+    <div class="row"><div class="tm jp">つづいて</div><div><h4>都島の物件を見学</h4></div></div>
     <div class="row"><div class="tm jp">つづいて</div><div><h4>価格帯の異なる物件を見学</h4></div></div>
     <div class="row"><div class="tm">17:00<small>– 19:00</small></div><div><h4>懇親会</h4><p>実費・別途ご案内します</p></div></div>
     <p class="note">※ 進行スケジュールは変更になる場合があります</p>
