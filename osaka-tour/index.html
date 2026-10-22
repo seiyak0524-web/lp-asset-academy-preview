@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>12/7（月）大阪物件ツアー｜資産形成アカデミー</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+<style>
+:root{--main:#D33667;--deep:#B71E4E;--wine:#8A1538;--pink-bg:#FCE9EE;--pink-soft:#FDF2F4;--cream:#FBF6EE;--gold-d:#9C6A14;--gold-m:#C49A3C;--gold-l:#F0DCA8;--ink:#3A3034;--mute:#7A6E72;--serif:'Noto Serif JP',serif;--sans:'Noto Sans JP',sans-serif;--script:'Pinyon Script',cursive}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{background:#EDE4DC;font-family:var(--sans);color:var(--ink);line-height:1.8;font-size:16px}
+.wrap{max-width:560px;margin:0 auto;background:var(--cream);box-shadow:0 0 30px rgba(0,0,0,.08)}
+/* FV */
+.fv{background:radial-gradient(120% 90% at 50% 0%,#E8507F 0%,var(--main) 45%,var(--wine) 100%);color:#fff;padding:44px 24px 36px;text-align:center;position:relative;overflow:hidden}
+.fv:before{content:"";position:absolute;inset:10px;border:1px solid rgba(240,220,168,.55);pointer-events:none}
+.fv .tag{display:inline-block;background:var(--gold-l);color:var(--wine);font-weight:700;font-size:12px;letter-spacing:.2em;padding:5px 14px;border-radius:999px;margin-bottom:16px}
+.fv .script{font-family:var(--script);font-size:34px;color:var(--gold-l);line-height:1;margin-bottom:6px}
+.fv h1{font-family:var(--serif);font-size:34px;line-height:1.3;font-weight:700;letter-spacing:.04em;text-shadow:0 2px 8px rgba(0,0,0,.2)}
+.fv h1 small{display:block;font-size:15px;font-weight:600;letter-spacing:.15em;margin-bottom:8px;color:#FFE3EB}
+.fv .date{margin-top:20px;display:inline-flex;align-items:baseline;gap:8px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.4);padding:10px 20px;border-radius:12px}
+.fv .date b{font-size:30px;font-family:var(--serif);letter-spacing:.02em}
+.fv .date span{font-size:14px;font-weight:600}
+.fv p.lead{margin-top:18px;font-size:14px;line-height:1.9;color:#FFEFF3}
+/* sections */
+.sec{padding:34px 24px}
+.sec h2{font-family:var(--serif);font-size:22px;color:var(--wine);text-align:center;letter-spacing:.08em;margin-bottom:6px}
+.sec .en{display:block;text-align:center;font-family:var(--script);font-size:26px;color:var(--gold-m);line-height:1;margin-bottom:22px}
+/* timeline */
+.tl{position:relative;padding-left:26px}
+.tl:before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:var(--gold-l)}
+.ti{position:relative;margin-bottom:18px}
+.ti:before{content:"";position:absolute;left:-24px;top:9px;width:12px;height:12px;border-radius:50%;background:var(--main);border:2px solid var(--cream);box-shadow:0 0 0 2px var(--gold-m)}
+.ti .time{font-family:var(--serif);font-weight:700;color:var(--main);font-size:18px;letter-spacing:.04em}
+.ti .time small{font-size:12px;color:var(--mute);font-family:var(--sans);font-weight:500;margin-left:8px}
+.ti h3{font-size:17px;font-weight:700;color:var(--wine);margin-top:2px}
+.ti p{font-size:14px;color:#5A4E53;margin-top:2px}
+.ti.hi{background:var(--pink-soft);border-radius:12px;padding:12px 14px;margin-left:-4px;border:1px solid #F7D3DD}
+.ti.hi:before{left:-28px;top:21px}
+/* info table */
+.info{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.05)}
+.info th,.info td{padding:13px 14px;border-bottom:1px solid #F3E7EA;text-align:left;vertical-align:top;font-size:15px}
+.info th{width:34%;background:var(--pink-soft);color:var(--wine);font-weight:700;font-size:14px}
+.info tr:last-child th,.info tr:last-child td{border-bottom:0}
+.todo{color:#B4232C;font-weight:700;font-size:13px}
+/* points */
+.pt{background:#fff;border-radius:14px;padding:18px 18px 10px;box-shadow:0 2px 12px rgba(0,0,0,.05)}
+.pt li{list-style:none;position:relative;padding-left:30px;margin-bottom:12px;font-size:15px}
+.pt li:before{content:"";position:absolute;left:0;top:5px;width:20px;height:20px;border-radius:50%;background:var(--gold-l)}
+.pt li:after{content:"";position:absolute;left:7px;top:9px;width:5px;height:9px;border-right:2px solid var(--gold-d);border-bottom:2px solid var(--gold-d);transform:rotate(45deg)}
+/* cta */
+.cta{padding:10px 24px 40px;text-align:center}
+.cta .cap{font-size:13px;color:var(--mute);margin-bottom:10px}
+.btn{display:block;background:linear-gradient(180deg,#E24A7B,var(--deep));color:#fff;text-decoration:none;font-weight:900;font-size:19px;letter-spacing:.06em;padding:20px 16px;border-radius:999px;box-shadow:0 8px 20px rgba(183,30,78,.35),inset 0 1px 0 rgba(255,255,255,.35);border:2px solid var(--gold-l)}
+.btn small{display:block;font-size:12px;font-weight:600;letter-spacing:.1em;opacity:.9}
+.cta .note{margin-top:14px;font-size:12.5px;color:var(--mute);line-height:1.7}
+.sticky{position:sticky;bottom:0;background:rgba(251,246,238,.92);backdrop-filter:blur(6px);padding:10px 16px 14px;border-top:1px solid #F0DCA8}
+.sticky .btn{padding:15px;font-size:17px}
+.foot{background:var(--wine);color:#F7D3DD;text-align:center;font-size:12px;padding:18px;letter-spacing:.08em}
+</style></head><body><div class="wrap">
+
+<section class="fv">
+  <div class="tag">資産形成アカデミー 受講生限定</div>
+  <div class="script">Osaka Property Tour</div>
+  <h1><small>一緒に見て、肌感をつかむ1日</small>大阪物件ツアー</h1>
+  <div class="date"><b>12.7</b><span>（月）13:00 集合</span></div>
+  <p class="lead">都島の物件から、手頃な価格帯の物件まで。<br>不動産のプロと一緒にまわり、夜は懇親会でゆっくりお話ししましょう。</p>
+</section>
+
+<section class="sec">
+  <h2>当日の流れ</h2><span class="en">Schedule</span>
+  <div class="tl">
+    <div class="ti"><div class="time">13:00<small>集合</small></div><h3>大阪市内近郊に集合</h3><p>集合場所の詳細は、お申し込みの方に追ってご案内します</p></div>
+    <div class="ti"><div class="time">13:00〜</div><h3>物件ツアー開始：都島の物件</h3><p>最初に、都島の物件を見学します</p></div>
+    <div class="ti hi"><div class="time">途中</div><h3>不動産のプロによる特別セミナー</h3><p>物件を見ながら、現場で聞けるからこそ分かる話</p></div>
+    <div class="ti"><div class="time">つづいて</div><h3>手頃な価格帯の物件を見学</h3><p>「このくらいなら手が届く」の肌感をつかみます</p></div>
+    <div class="ti"><div class="time">17:00〜19:00</div><h3>懇親会</h3><p>見てきた物件のこと、これからのことを話す時間（実費・別途ご案内）</p></div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <h2>開催概要</h2><span class="en">Information</span>
+  <table class="info">
+    <tr><th>日時</th><td>2026年12月7日（月）13:00 集合<br>懇親会 17:00〜19:00</td></tr>
+    <tr><th>集合場所</th><td>大阪市内近郊<br><span class="todo">【要確認】駅名・住所</span></td></tr>
+    <tr><th>対象</th><td>資産形成アカデミー受講生</td></tr>
+    <tr><th>定員</th><td>7名（先着）</td></tr>
+    <tr><th>参加費</th><td>ツアー：<span class="todo">【要確認】</span><br>懇親会：実費（別途ご案内します）</td></tr>
+    <tr><th>同行</th><td>小沼 勢矢・不動産のプロ<span class="todo">（【要確認】松田リエの同行）</span></td></tr>
+    <tr><th>申込締切</th><td><span class="todo">【要確認】</span></td></tr>
+  </table>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <h2>こんな方に</h2><span class="en">For you</span>
+  <ul class="pt">
+    <li>不動産投資に前向きで、実物を見て肌感をつかみたい</li>
+    <li>どのくらいの価格帯なら手が届くのか、現場で知りたい</li>
+    <li>プロに、その場で聞いてみたいことがある</li>
+    <li>同じ目標を持つ仲間と、ゆっくり話したい</li>
+  </ul>
+</section>
+
+<section class="cta">
+  <p class="cap">定員7名・先着順</p>
+  <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScyHPEQBIt2ZUzKzX8SzUuvoHq7v1Wx-1BQWp2wDXnw_Ydb_w/viewform" target="_blank" rel="noopener">ツアーに申し込む<small>所要1分・Googleフォーム</small></a>
+  <p class="note">※ 現地までの交通費は各自ご負担ください<span class="todo">【要確認】</span><br>※ 集合場所・持ち物などの詳細は、お申し込みの方にご連絡します</p>
+</section>
+
+<div class="sticky"><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScyHPEQBIt2ZUzKzX8SzUuvoHq7v1Wx-1BQWp2wDXnw_Ydb_w/viewform" target="_blank" rel="noopener">申し込みフォームへ</a></div>
+<footer class="foot">資産形成アカデミー　事務局</footer>
+</div></body></html>
